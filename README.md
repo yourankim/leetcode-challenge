@@ -2,7 +2,7 @@
 
 [Leetcode](https://leetcode.com)의 알고리즘 문제 중 `Top Interviewed Questions`와 `Top 100 Liked Questions` 리스트의 문제들을 풀고 기록하는 저장소입니다. `Top Interviewed Questions` 리스트의 문제는 총 71개이고 `Top 100 Liked Questions` 리스트에 모두 포함되어 있습니다.
 
-*Dynamic Programming*은 `DP`, _Depth-first Search_ 는 `DFS`, *Breadth-first-Search*는 `BFS`로 표기했습니다.
+*Dynamic Programming*은 `DP`, Depth-first Search는 `DFS`, *Breadth-first-Search*는 `BFS`로 표기했습니다.
 
 (리스트 수집일: 2021.02.18)
 
@@ -109,6 +109,6 @@
 | 45  | [Jump Game II](https://leetcode.com/problems/jump-game-ii)                                                                                           | Array, Greedy                                    | 31.40%     | Hard       |                    | :heavy_check_mark: |                    |
 | 32  | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses)                                                                 | String, DP                                       | 29.30%     | Hard       |                    | :heavy_check_mark: |                    |
 
-- DP: Dynamic Programming
-- DFS: Depth-first Search
-- BFS: Breadth-first Search
+---
+
+([Tables Generator](https://tablesgenerator.com/)를 이용해 CSV 파일을 markdown 텍스트로 변환했습니다.)
