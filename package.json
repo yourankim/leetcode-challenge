@@ -6,6 +6,7 @@
   "author": "yourankim",
   "license": "MIT",
   "dependencies": {
+    "csv-parser": "^3.0.0",
     "path": "^0.12.7",
     "prettier": "^2.2.1"
   }
