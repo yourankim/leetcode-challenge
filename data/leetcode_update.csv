@@ -50,7 +50,7 @@
 56,Merge Intervals,"Array,Sort",41.00%,Medium,O,O,
 138,Copy List with Random Pointer,"Hash Table,Linked List",40.70%,Medium,O,O,
 234,Palindrome Linked List,"Linked List,Two Pointers",40.40%,Easy,O,O,O
-20,Valid Parentheses,"String,Stack",39.80%,Easy,O,O,
+20,Valid Parentheses,"String,Stack",39.80%,Easy,O,O,O
 34,Find First and Last Position of Element in Sorted Array,"Array,Binary Search",37.30%,Medium,O,O,
 322,Coin Change,DP,37.20%,Medium,O,O,
 84,Largest Rectangle in Histogram,"Array,Stack",37.10%,Hard,O,O,
@@ -111,8 +111,8 @@
 118,Pascal's Triangle,Array,54.70%,Easy,O,,O
 268,Missing Number,"Array,Math,Bit Manipulation",53.80%,Easy,O,,
 387,First Unique Character in a String,"Hash Table,String",53.80%,Easy,O,,O
-191,Number of 1 Bits,Bit Manipulation,53.70%,Easy,O,,
-350,Intersection of Two Arrays II,"Hash Table,Two Pointers,Binary Search,Sort",51.90%,Easy,O,,
+191,Number of 1 Bits,Bit Manipulation,53.70%,Easy,O,,O
+350,Intersection of Two Arrays II,"Hash Table,Two Pointers,Binary Search,Sort",51.90%,Easy,O,,O
 202,Happy Number,"Hash Table,Math",51.20%,Easy,O,,O
 26,Remove Duplicates from Sorted Array,"Array,Two Pointers",46.50%,Easy,O,,
 66,Plus One,Array,42.30%,Easy,O,,
