@@ -1,28 +1,28 @@
-const express = require("express");
+import express from 'express';
+import csv from 'csv-parser';
+import path from 'path';
+import fs from 'fs';
+import { getCountByTopics } from './util/index.js';
+
 const app = express();
 const port = 3000;
 
-const csv = require("csv-parser");
-const fs = require("fs");
-const path = require("path");
-const { getCountByTopics } = require("./util");
+const CSV_PATH = path.resolve('data/leetcode_update.csv');
 
-const CSV_PATH = path.resolve("data/leetcode_update.csv");
-
-app.get("/", (req, res) => {
-  res.send("Hello, Test App!");
+app.get('/', (req, res) => {
+  res.send('Hello, Test App!');
 });
 
-app.get("/chart", (req, res) => {
+app.get('/chart', (req, res) => {
   const result = [];
 
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'X-Requested-With');
 
   fs.createReadStream(CSV_PATH)
     .pipe(csv())
-    .on("data", (data) => result.push(data))
-    .on("end", () => {
+    .on('data', (data) => result.push(data))
+    .on('end', () => {
       const counts = getCountByTopics(result);
       console.log(counts);
       res.json(counts);

@@ -1,24 +1,25 @@
 const getAllTopics = (data) => {
   const set = new Set();
   data.forEach((row) => {
-    row.Topic.split(",").forEach((topic) => set.add(topic));
+    row.Topic.split(',').forEach((topic) => set.add(topic));
   });
   return set;
 };
 
 const getCountByTopics = (data) => {
   const topics = getAllTopics(data);
-  const counts = new Map();
-  topics.forEach((topic) => {
-    const count = data.filter((problem) => problem.Topic.includes(topic))
-      .length;
-    const solvedCount = data.filter(
-      (problem) => problem.Topic.includes(topic) && problem.Solved === "O"
+  const counts = Array.from(topics).map((topic) => {
+    const topicObj = { topic };
+    topicObj.total = data.filter((problem) =>
+      problem.Topic.includes(topic)
     ).length;
-    counts.set(topic, [count, solvedCount]);
+    topicObj.solved = data.filter(
+      (problem) => problem.Topic.includes(topic) && problem.Solved === 'O'
+    ).length;
+    return topicObj;
   });
 
   return counts;
 };
 
-module.exports = { getAllTopics, getCountByTopics };
+export { getAllTopics, getCountByTopics };
