@@ -100,7 +100,7 @@
 45,Jump Game II,"Array,Greedy",31.40%,Hard,,O,
 32,Longest Valid Parentheses,"String,DP",29.30%,Hard,,O,
 344,Reverse String,"Two Pointers,String",70.30%,Easy,O,,O
-237,Delete Node in a Linked List,Linked List,66.80%,Easy,O,,
+237,Delete Node in a Linked List,Linked List,66.80%,Easy,O,,O
 412,Fizz Buzz,[None],63.50%,Easy,O,,O
 108,Convert Sorted Array to Binary Search Tree,"Tree,DFS",60.30%,Easy,O,,
 242,Valid Anagram,"Hash Table,Sort",58.60%,Easy,O,,O
@@ -109,12 +109,12 @@
 217,Contains Duplicate,"Array,Hash Table",56.60%,Easy,O,,O
 13,Roman to Integer,"Math,String",56.50%,Easy,O,,O
 118,Pascal's Triangle,Array,54.70%,Easy,O,,O
-268,Missing Number,"Array,Math,Bit Manipulation",53.80%,Easy,O,,
+268,Missing Number,"Array,Math,Bit Manipulation",53.80%,Easy,O,,O
 387,First Unique Character in a String,"Hash Table,String",53.80%,Easy,O,,O
 191,Number of 1 Bits,Bit Manipulation,53.70%,Easy,O,,O
 350,Intersection of Two Arrays II,"Hash Table,Two Pointers,Binary Search,Sort",51.90%,Easy,O,,O
 202,Happy Number,"Hash Table,Math",51.20%,Easy,O,,O
-26,Remove Duplicates from Sorted Array,"Array,Two Pointers",46.50%,Easy,O,,
+26,Remove Duplicates from Sorted Array,"Array,Two Pointers",46.50%,Easy,O,,O
 66,Plus One,Array,42.30%,Easy,O,,
 326,Power of Three,Math,42.10%,Easy,O,,
 190,Reverse Bits,Bit Manipulation,42.00%,Easy,O,,
