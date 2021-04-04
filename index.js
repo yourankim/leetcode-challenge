@@ -1,15 +1,41 @@
-const csv = require("csv-parser");
-const fs = require("fs");
-const path = require("path");
-const { getAllTopics, getCountByTopics } = require("./util");
-const result = [];
+const drawChart = (domElement, data) => {
+  const chart = echarts.init(domElement);
+  const option = {
+    tooltip: {},
+    legend: {},
+    dataset: {
+      dimensions: ['topic', 'total', 'solved'],
+      source: data,
+    },
+    xAxis: {
+      type: 'category',
+    },
+    yAxis: {},
+    series: [{ type: 'bar' }, { type: 'bar' }],
+  };
+  chart.setOption(option);
+};
 
-const CSV_PATH = path.resolve("data/leetcode_update.csv");
+const getData = async (URL) => {
+  try {
+    const response = await fetch(URL);
+    return response.json();
+  } catch (e) {
+    console.error(e);
+  }
+};
 
-fs.createReadStream(CSV_PATH)
-  .pipe(csv())
-  .on("data", (data) => result.push(data))
-  .on("end", () => {
-    const counts = getCountByTopics(result);
-    console.log(counts);
-  });
+const $chartDom = document.querySelector('#chart');
+/*
+getData('http://127.0.0.1:3000/chart')
+  .then((data) => drawChart($chartDom, data))
+  .catch((e) => console.error(e));
+*/
+(async () => {
+  try {
+    const data = await getData('http://127.0.0.1:3000/chart');
+    drawChart($chartDom, data);
+  } catch (e) {
+    console.error(e);
+  }
+})();
