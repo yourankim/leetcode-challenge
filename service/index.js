@@ -1,5 +1,6 @@
 import path from 'path';
 import fs from 'fs';
+import os from 'os';
 
 const getAllTopics = (data) => {
   const set = new Set();
@@ -10,6 +11,7 @@ const getAllTopics = (data) => {
 };
 
 const getCountByTopics = (data) => {
+  console.log(data);
   const topics = getAllTopics(data);
   const counts = Array.from(topics).map((topic) => {
     const topicObj = { topic };
@@ -27,10 +29,10 @@ const getCountByTopics = (data) => {
 
 const csvToArray = (PATH) => {
   const data = fs.readFileSync(PATH, 'UTF-8');
-  const header = data.split('\r\n')[0].split(',');
+  const header = data.split(os.EOL)[0].split(',');
   return data
-    .slice(data.indexOf('\r\n') + 2)
-    .split('\r\n')
+    .slice(data.indexOf(os.EOL) + 2)
+    .split(os.EOL)
     .map((row) => {
       const values = parseValues(row);
       const obj = {};

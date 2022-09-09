@@ -154,7 +154,7 @@
 227,Basic Calculator II,"String,Stack",38.50%,Medium,O,,
 150,Evaluate Reverse Polish Notation,Stack,37.90%,Medium,O,,
 189,Rotate Array,Array,36.60%,Medium,O,,
-54,Spiral Matrix,Array,35.90%,Medium,O,,
+54,Spiral Matrix,Array,35.90%,Medium,O,,O
 50,"Pow(x,n)","Math,Binary Search",30.90%,Medium,O,,
 324,Wiggle Sort II,Sort,30.70%,Medium,O,,
 179,Largest Number,Sort,30.60%,Medium,O,,
